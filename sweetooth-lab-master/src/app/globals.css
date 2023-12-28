@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fefcf3;
+}
+
+* {
+  scroll-behavior: smooth;
+
+  /* disable blue highlight */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  color: #f5ebe0;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #dba39a;
+}
+
+.rating::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  color: #f5ebe0;
+}
+
+.rating::-webkit-scrollbar-track {
+  background-color: #f5ebe0;
+  cursor: pointer;
+}
+
+.rating::-webkit-scrollbar-thumb {
+  background-color: #dba39a;
+}
